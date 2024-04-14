@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navbar</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
     <div class="container">
       <!-- Logo -->
       <a class="navbar-brand" href="#">
-        <img src="/assets/img/PET PALS logo 1.jpg" alt="Logo" height="30">
+        <img src="{{ url_for('static', filename='images/PET PALS Logo 1.jpg') }}" alt="Image" height="30">
       </a>
 
       <!-- Search Bar -->
@@ -45,7 +45,7 @@
   </nav>
 
   <div class="full-width-image">
-    <img src="/assets/img/plate 2.png" alt="Full Width Image">
+    <img src="{{ url_for('static', filename='images/plate 2.png') }}" alt="Full Width Image">
   </div>
 
   <div class="container">
@@ -63,19 +63,19 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto">
-                <img src="/assets/img/insta 1.png" alt="Image 1">
+              <img src="{{ url_for('static', filename='images/insta 1.png') }}" alt="Image 1">
                 <p class="ml-2">INSTAGRAM</p>
             </div>
             <div class="col-auto">
-                <img src="/assets/img/phone 1.png" alt="Image 2">
+              <img src="{{ url_for('static', filename='images/phone 1.png') }}" alt="Image 2">
                 <p class="ml-2">TELEPHONE</p>
             </div>
             <div class="col-auto">
-                <img src="/assets/img/X-Logo 1.png" alt="Image 3">
+              <img src="{{ url_for('static', filename='images/X-Logo 1.png') }}" alt="Image 3">
                 <p class="ml-2">TWITTER</p>
             </div>
             <div class="col-auto">
-                <img src="/assets/img/phone 1.png" alt="Image 4">
+              <img src="{{ url_for('static', filename='images/mail 1.png') }}" alt="Image 4">
                 <p class="ml-2">MAIL</p>
             </div>
         </div>
